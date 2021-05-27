@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <titleZ>SnowFall</titleZ>
+    <title>SnowFall</title>
     <style type="text/css">
         body {
             background: #ccc;
@@ -24,12 +24,12 @@
             bg.src = "bg.jpg"
             var flakes = [];
             function snowfall() {
-                ctx.drawImage(bg, 0, 0);
+                //ctx.drawImage(bg, 0, 0);
                 addFlake();
                 snow()
             };
             function addFlake() {
-                var x = Math.ceil(Math.random() * width);
+                var x = Math.ceil(Math.random() * w);
                 var s = Math.ceil(Math.random() * 4);
                 flakes.push({ "x": x, "y": 0, "s": s })
             };
@@ -38,11 +38,16 @@
                     var flake = flakes[i];
                     ctx.beginPath();
                     ctx.fillStyle = "rgba(255, 255, 255, 0.7)"
-                    ctx.arc(flake.x, flake.y, flake.s, 0, 2 * Math.PI)
+                    ctx.arc(flake.x, flakes[i].y+=flakes.s/2, flake.s/2, 0, 2 * Math.PI)
                     ctx.fill();
-                }
-            }
-        }
+                    if(flakes[i].y>h){
+                        flakes.splice(i,1);
+                    }
+                };
+            };
+            setInterval(snowfall, 20);
+        };
+        window.onload=init;
     </script>
 </head>
 
