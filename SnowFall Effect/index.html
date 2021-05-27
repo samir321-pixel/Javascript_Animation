@@ -1,8 +1,55 @@
 <html>
-    <head>
-        <titleZ>SnowFall</titleZ>
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <titleZ>SnowFall</titleZ>
+    <style type="text/css">
+        body {
+            background: #ccc;
+        }
+
+        #canvas {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50) translate(-50%);
+        }
+    </style>
+    <script type="text/javascript">
+        function init() {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            var w = canvas.width;
+            var h = canvas.height;
+            var bg = new Image()
+            bg.src = "bg.jpg"
+            var flakes = [];
+            function snowfall() {
+                ctx.drawImage(bg, 0, 0);
+                addFlake();
+                snow()
+            };
+            function addFlake() {
+                var x = Math.ceil(Math.random() * width);
+                var s = Math.ceil(Math.random() * 4);
+                flakes.push({ "x": x, "y": 0, "s": s })
+            };
+            function snow() {
+                for (var i = 0; i < flakes.length; i++) {
+                    var flake = flakes[i];
+                    ctx.beginPath();
+                    ctx.fillStyle = "rgba(255, 255, 255, 0.7)"
+                    ctx.arc(flake.x, flake.y, flake.s, 0, 2 * Math.PI)
+                    ctx.fill();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <canvas id="canvas" width="778" height="387"></canvas>
+
+
+</body>
+
 </html>
