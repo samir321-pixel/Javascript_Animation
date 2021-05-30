@@ -50,7 +50,7 @@ nav{
     height: 1000px;
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: 0%;
     transform: translateY(-50%);
 }
 
@@ -61,7 +61,6 @@ nav{
     top: 0%;
     left: 0%;
     border-radius: 50%;
-    background: #ccc;
 }
 
 .feature img{
@@ -69,6 +68,14 @@ nav{
 }
 .feature{
     position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
 }
 .one{
     top: 450px;
@@ -85,4 +92,35 @@ nav{
 .four{
     bottom: 150px;
     right: 350px;
+}
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#UpBtn{
+    width: 15px;
+    cursor: pointer;
+}
+
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
 }
