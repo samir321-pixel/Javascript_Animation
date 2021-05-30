@@ -161,5 +161,28 @@ nav ul li a{
 .feature-col{
     flex-basis: 25%;
     text-align: center;
-    
+
+}
+
+.feature-col img {
+    width: 100px;
+}
+
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.feature-btn{
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.feature-btn.line{
+    text-align: right;
+    display: inline-block;
+    margin-right: 25px;
 }
