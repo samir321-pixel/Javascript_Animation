@@ -1,11 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
-#header{
+#header {
     height: 100vh;
     background-image: url(images/background.png);
     background-position: center;
     background-size: cover;
+}
+
+.container {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo {
+    margin-top: 30px;
+    width: 100px;
+}
+
+.header-text{
+    max-width: 350px;
+    margin-top: 140px;
+}
+
+h1{
+    font-size: 34px;
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
 }
