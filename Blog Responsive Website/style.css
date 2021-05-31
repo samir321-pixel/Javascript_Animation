@@ -398,5 +398,11 @@ hr{
     .contact-right-col {
         margin-top: 50px;
     }
-    
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    .link-title {
+      flex-basis: 50%;
+      margin-bottom: 30px;
+    }
 }

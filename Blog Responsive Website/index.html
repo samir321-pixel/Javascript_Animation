@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <title>Blog Responsive Website</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
@@ -34,12 +49,12 @@
     </section>
     <nav id="sideNav">
         <ul>
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Features</a></li>
-            <li> <a href="#">Courses</a></li>
-            <li> <a href="#">Offer</a></li>
-            <li> <a href="#">Contact</a></li>
+            <li> <a href="#header">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#features">Features</a></li>
+            <li> <a href="#courses">Courses</a></li>
+            <li> <a href="#offer">Offer</a></li>
+            <li> <a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" id="menuBtn">
@@ -253,6 +268,10 @@
                 sideNav.style.right = "-250px";
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed:1000,
+            speedAsDuration:true
+        });
     </script>
 </body>
 
