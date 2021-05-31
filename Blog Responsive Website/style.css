@@ -161,7 +161,6 @@ nav ul li a{
 .feature-col{
     flex-basis: 25%;
     text-align: center;
-
 }
 
 .feature-col img {
@@ -335,7 +334,7 @@ hr{
 
 .social-icons img{
     display: block;
-    widows: 20px;
+    width: 20px;
     margin: 0 auto 20px;
     cursor: pointer;
 }
@@ -361,4 +360,43 @@ hr{
     h1{
         font-size: 25px;
     }
+    #menuBtn{
+        width: 40px;
+        right: 50px;
+    }
+    .common-btn{
+        padding: 10px 16px;
+    }
+    .social-icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    .about-left-col, .about-right-col{
+        flex-basis: 100%;
+    }
+    .about-text{
+        margin: 50px 50px 0;
+        display: inline-block;
+    }
+    .about-text h2{
+        font-size: 18px;
+    }
+    .feature-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .course-left-col{
+        flex-basis: 100%;
+    }
+    .course-right-col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .contact-left-col, .contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col {
+        margin-top: 50px;
+    }
+    
 }
