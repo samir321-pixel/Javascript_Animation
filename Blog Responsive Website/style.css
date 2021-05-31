@@ -339,3 +339,26 @@ hr{
     margin: 0 auto 20px;
     cursor: pointer;
 }
+
+@media only screen and (max-width:770px){
+    #header{
+        background-image: none;
+    }
+    .container {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .logo {
+        margin-top: 27px;
+        width: 70px;
+    }
+    
+    .header-text{
+        margin-top: 100px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+}
