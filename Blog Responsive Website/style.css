@@ -219,4 +219,18 @@ nav ul li a{
     margin: 30px 0;
 
 }
+/* contact */
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
+.contact-left-col, .contact-right-col{
+    flex-basis: 50%;
+
+}
+
+.contact-right-col img{
+    width: 100%;
+}
