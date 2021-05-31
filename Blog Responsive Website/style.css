@@ -281,7 +281,45 @@ hr{
 
 .footer-left-col{
     flex-basis: 50%;
+    margin-top: 60px;
 }
 .footer-right-col{
     flex-basis: 35%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: #fab3c4;
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    font-size: 13px;
+    color: #777;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.footer-logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;  
+}
+
+.copyright-text, .footer-logo{
+    flex-basis: 40%;
 }
