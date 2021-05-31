@@ -205,5 +205,12 @@ nav ul li a{
 }
 .course-left-col{
     flex-basis: 50%;
+}
     
+.course-text{
+    max-width: 350px;
+}
+
+.course-text button{
+    margin: 30px 0;
 }
