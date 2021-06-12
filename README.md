@@ -1,5 +1,4 @@
 # Javascript_Animation
- 
 s
 
 
