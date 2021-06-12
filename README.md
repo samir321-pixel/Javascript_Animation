@@ -1,6 +1,3 @@
 # Javascript_Animation
 s
 
-
-
-
